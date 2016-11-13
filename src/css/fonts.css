@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'BaronNeue';
+    src: url(/src/fonts/BaronNeue/Baron%20Neue.otf);
+}
+
+@font-face {
+    font-family: 'BaronNeueBold';
+    src: url(/src/fonts/BaronNeue/Baron%20Neue%20Bold.otf);
+}
+
+@font-face {
+    font-family: 'BaronNeueItalic';
+    src: url(/src/fonts/BaronNeue/Baron%20Neue%20Italic.otf);
+}
