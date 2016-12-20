@@ -4,12 +4,313 @@
     <meta charset="UTF-8">
     <title>Scriptum</title>
     <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/fa/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/fonts.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
     
+    <div class="wrapper">
+        
+        <header class="header" id="header">
+            <div class="header__logo"></div>
+            <nav class="menu">
+                <li><a href="#about" class="menu__item1">about scriptum</a></li>
+                <li><a href="#works" class="menu__item2">works</a></li>
+                <li><a href="#webDev" class="menu__item3">web development</a></li>
+                <li><a href="#skills" class="menu__item4">skills</a></li>
+                <li><a href="#telephone" class="menu__item4">responsive design</a></li>
+                <li><a href="#news" class="menu__item5">news</a></li>
+                <li><a href="#slider" class="menu__item6">quotes</a></li>
+                <li><a href="#contact" class="menu__item7">contact us</a></li>
+            </nav>
+            <div class="header__menu"></div>
+        </header>
+        
+        <article class="about" id="about">
+            <figure class="about__AboutCenter">
+                <div class="AboutCenter__img"></div>
+                <figcaption>
+                    <h1 class="AboutCenter__title">About Scriptum</h1>
+                    <p class="AboutCenter__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors. 
+                    </p>
+                    <div class="AboutCenter__more"><a href="#">learn more</a></div>
+                </figcaption>
+            </figure>
+        </article>
+        
+        <article class="works" id="works">
+            <figure class="works__WorksCenter">
+                <h1 class="WorksCenter__title">works</h1>
+                <menu class="WorksCenter__menu">
+                    <li>all</li>
+                    <li>design</li>
+                    <li>web</li>
+                    <li>brand</li>
+                    <li>art</li>
+                </menu>
+                <div class="WorksCenter__pictures">
+                    <div class="pictures__left">
+                        <img src="src/img/block1_img1.jpg" alt="block1_img1">
+                        <img src="src/img/block1_img6.jpg" alt="block1_img6">
+                        <img src="src/img/block1_img3.jpg" alt="block1_img3">
+                        <img src="src/img/block1_img7.jpg" alt="block1_img7">
+                    </div>
+                    <div class="pictures__right">
+                        <img src="src/img/block1_img5.jpg" alt="block1_img5">
+                        <img src="src/img/block1_img2.jpg" alt="block1_img2">
+                        <img src="src/img/block1_img4.jpg" alt="block1_img4">
+                        <img src="src/img/block1_img8.jpg" alt="block1_img8">
+                    </div>  
+                </div>
+            </figure>
+        </article>
+                
+        <article class="webDev" id="webDev">
+            <img src="src/img/webDev_ipicture.jpg" alt="webDev__picture">
+            <div class="webDev__images">
+                <div class="images__left">
+                    <figure class="left__design">
+                        <div class="design__img"></div>
+                        <figcaption>design</figcaption>
+                    </figure>
+                    <figure class="left__com">
+                        <div class="com__img"></div>
+                        <figcaption>communication</figcaption>
+                    </figure>
+                    <figure class="left__coords">
+                        <div class="coords__img"></div>
+                        <figcaption>coordination</figcaption>
+                    </figure>
+                </div>
+                <div class="images__right">
+                    <figure class="right__work">
+                        <div class="work__img"></div>
+                        <figcaption>night work</figcaption>
+                    </figure>
+                    <figure class="right__safety">
+                        <div class="safety__img"></div>
+                        <figcaption>safety</figcaption>
+                    </figure>
+                    <figure class="right__dev">
+                        <div class="dev__img"></div>
+                        <figcaption>development</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </article>
+        
+        <article class="skills" id="skills">
+            <h1 class="skills__title">SKILLS</h1>
+            <div class="skills__progress">
+                <p>design</p>
+                <div class="progress__design"><p><span>95%</span></p></div>
+                <p>css3</p>
+                <div class="progress__css"><p><span>85%</span></p></div>
+                <p>javascript</p>
+                <div class="progress__js"><p><span>80%</span></p></div>
+            </div>
+        </article>
+        
+        <article class="telephone" id="telephone">
+            <div class="telephone__block1">
+                <div class="block1__top">
+                    <div class="top__left">
+                        <img src="src/img/telephone__Photos.jpg" width="66" alt="telephone__Photos">
+                    </div>
+                    <div class="top__right">
+                        <h2>beauteful photos</h2>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.</p>
+                    </div>
+                </div>
+                <div class="block1__bottom">
+                    <div class="bottom__left">
+                        <img src="src/img/telephone__Responsive.jpg" alt="telephone__Responsive">
+                    </div>
+                    <div class="bottom__right">
+                        <h2>full responsive</h2>
+                        <p>Integer quis tortor metus. Aliquam et lacus nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ut eros nibh.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="telephone__block2">
+                <img src="src/img/telephone__iphone.png" height="300" alt="telephone__iphone">
+            </div>
+            <div class="telephone__block3">
+                <div class="block3__bl3Top">
+                    <div class="bl3Top__left">
+                        <img src="src/img/telephone__Redy.jpg" width="66" alt="telephone__Redy">
+                    </div>
+                    <div class="bl3Top__right">
+                        <h2>retina ready</h2>
+                        <p>Proin vitae quam mollis diam faucibus porta hendrerit vitae diam. Aenean cursus massa quis sem dictum convallis. Morbi ornare rutrum tellus, eu dapibus magna iaculis dictum. Nam nibh.</p>
+                    </div>
+                </div>
+                <div class="block3__bl3Bottom">
+                    <div class="bl3Bottom__left">
+                        <img src="src/img/telephone__Crafied.jpg" alt="telephone__Crafied">
+                    </div>
+                    <div class="bl3Bottom__right">
+                        <h2>crafied on coffeescript</h2>
+                        <p>Sed a ipsum molestie, pellentesque felis at, vestibulum nunc. Aenean eu tristique elit. Vivamus ullamcorper id ante nec condimentum. In eleifend convallis ante in semper. Nam vitae com.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="news" id="news">
+            <h1>news</h1>
+            <div class="news__wrap">
+                <figure class="wrap__one">
+                    <img src="src/img/news__img1.jpg" width="100%" alt="news__img1">
+                    <figcaption class="one__figOne">
+                        <div class="figOne__author">
+                            <span class="wrap__pencil"><img src="src/img/news__pencil.png" alt="news__pencil"></span>
+                            <span class="wrap__text">Stone Clad</span>
+                        </div>
+                        <div class="figOne__date clearfix">
+                            <span class="wrap__pencil"><img src="src/img/news__date.jpg" alt="news__date"></span>
+                            <span class="wrap__text">27.01.2017</span>
+                        </div>
+                        <h2 class="wrap__title">maecenas concequat turois at ante</h2>
+                        <p class="wrap__description">It is a long established fact that a reader will be distracted.</p>
+                        <div class="wrap__btn"><a href="#">learn more</a></div>
+                    </figcaption>
+                </figure>
+                <figure class="wrap__two">
+                    <img src="src/img/news__img2.jpg" width="100%" alt="news__img2">
+                    <figcaption class="two__figTwo">
+                        <div class="figTwo__author">
+                            <span class="wrap__pencil"><img src="src/img/news__pencil.png" alt="news__pencil"></span>
+                            <span class="wrap__text">Stone Clad</span>
+                        </div>
+                        <div class="figTwo__date clearfix">
+                            <span class="wrap__pencil"><img src="src/img/news__date.jpg" alt="news__date"></span>
+                            <span class="wrap__text">27.01.2017</span>
+                        </div>
+                        <h2 class="wrap__title">maecenas concequat turois at ante</h2>
+                        <p class="wrap__description">It is a long established fact that a reader will be distracted.</p>
+                        <div class="wrap__btn"><a href="#">learn more</a></div>
+                    </figcaption>
+                </figure>
+                <figure class="wrap__three">
+                    <img src="src/img/news__img3.jpg" width="100%" alt="news__img3">
+                    <figcaption class="three__figThree">
+                        <div class="figThree__author">
+                            <span class="wrap__pencil"><img src="src/img/news__pencil.png" alt="news__pencil"></span>
+                            <span class="wrap__text">Stone Clad</span>
+                        </div>
+                        <div class="figThree__date clearfix">
+                            <span class="wrap__pencil"><img src="src/img/news__date.jpg" alt="news__date"></span>
+                            <span class="wrap__text">27.01.2017</span>
+                        </div>
+                        <h2 class="wrap__title">maecenas concequat turois at ante</h2>
+                        <p class="wrap__description">It is a long established fact that a reader will be distracted.</p>
+                        <div class="wrap__btn"><a href="#">learn more</a></div>
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+        
+        <article class="slider" id="slider">
+            <div class="slider__img">
+                <img src="src/img/slider__bigImg.png" width="100%" height="250px" alt="img">
+            </div>
+            <div class="slider__content">
+                <div class="east__north">
+                    <div class="east__morth__box">
+                        <img src="/src/img/slider__img.png" alt="slider">
+                        <section class="east__morth__slider">
+                            <div class="slider__panel">
+                                <div class="slider__item">
+                                    <p class="widht320">
+                                        Wroin dapibus nunc<br> 
+                                        eget porta, vulputate<br> 
+                                        consectetur. Donec non<br> 
+                                        eleifend sem. Integer<br>
+                                        eleifend tellus. Fusce<br>
+                                        quis ullamcorper, pretium<br> 
+                                        nibh undo leo vel.</p>
+                                    <p class="widht1200">Wroin dapibus nunc eget porta, vulputate <br> consectetur. Donec non eleifend sem. Integer <br> eleifend tellus. Fusce quis ullamcorper, pretium <br> nibh undo leo vel.</p>
+                                </div>
+                            </div>
+                            <div class="slider__panel">
+                                <div class="slider__item">
+                                    <p class="widht320">
+                                        Wroin dapibus nunc<br> 
+                                        eget porta, vulputate<br>
+                                        consectetur. Donec non<br> 
+                                        eleifend sem. Integer<br>
+                                        eleifend tellus. Fusce<br>
+                                        quis ullamcorper, pretium<br> 
+                                        nibh undo leo vel.</p>
+                                    <p class="widht1200">Wroin dapibus nunc eget porta, vulputate <br> consectetur. Donec non eleifend sem. Integer <br> eleifend tellus. Fusce quis ullamcorper, pretium <br> nibh undo leo vel.</p>
+                                </div>
+                            </div>
+                            <div class="slider__panel">
+                                <div class="slider__item">
+                                    <p class="widht320">
+                                        Wroin dapibus nunc<br> 
+                                        eget porta, vulputate<br>
+                                        consectetur. Donec non<br> 
+                                        eleifend sem. Integer<br>
+                                        eleifend tellus. Fusce<br>
+                                        quis ullamcorper, pretium<br> 
+                                        nibh undo leo vel.</p>
+                                    <p class="widht1200">Wroin dapibus nunc eget porta, vulputate <br> consectetur. Donec non eleifend sem. Integer <br> eleifend tellus. Fusce quis ullamcorper, pretium <br> nibh undo leo vel.</p>
+                                </div>
+                            </div>
+                            <div class="slider__panel">
+                                <div class="slider__item">
+                                    <p class="widht320">
+                                        Wroin dapibus nunc<br> 
+                                        eget porta, vulputate<br>
+                                        consectetur. Donec non<br> 
+                                        eleifend sem. Integer<br>
+                                        eleifend tellus. Fusce<br>
+                                        quis ullamcorper, pretium<br> 
+                                        nibh undo leo vel.</p>
+                                    <p class="widht1200">Wroin dapibus nunc eget porta, vulputate <br> consectetur. Donec non eleifend sem. Integer <br> eleifend tellus. Fusce quis ullamcorper, pretium <br> nibh undo leo vel.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="east__north__navigation"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="contact" id="contact">
+            <h1 class="contact__title">contact us</h1>
+            <form action="#" class="contact__form">
+                <label><input type="text" name="name" placeholder="*name" maxlength="16"></label>
+                <label><input type="text" name="sname" placeholder="*surname" maxlength="16"></label>
+                <p><input type="email" name="email" placeholder="*email"></p>
+                <p><textarea name="mesage" placeholder="masage"></textarea></p>
+                <p><input type="button" name="btn" value="send"></p>
+            </form>
+        </article>
+        
+        <article class="footer">
+            <div class="footer__icons">
+                <span class="icons__twitter"><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></span>
+                <span class="icons__facebook"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></span>
+                <span class="icons__behance"><a href="https://www.behance.net/" target="_blank"><i class="fa fa-behance"></i></a></span>
+            </div>
+            <p class="footer__copiright">Designed by Andrejs Hairulins - 2016 <span>&#169;</span></p>
+            <div class="footer__up">
+                <a href="#header">
+                <img src="src/img/footer__up.png" alt="footer__up">
+                </a>
+            </div>
+        </article>
+        
+        
+    </div>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="src/js/script.js"></script>
 </body>
 </html>
