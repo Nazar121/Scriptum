@@ -45,7 +45,7 @@ $(document).ready(function() {
         $(this).stop(true).queue('fx', function() {
             $(this).animate({
                 'box-sizing': 'border-box',
-                'width': '100%',
+                'width': '96%',
                 'height': 'auto'
             })
                 .dequeue('fx');
