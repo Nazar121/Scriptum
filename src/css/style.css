@@ -8,7 +8,7 @@ body {
 
 .wrapper {
     min-width: 240px;
-    max-width: 320px;
+    max-width: 319px;
     height: auto;
     margin: 0 auto;
     border: 1px solid red;
@@ -45,6 +45,13 @@ body {
     z-index: 1;
 }
 
+.header__logo a {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: block;
+}
+
 .header__logo {
     background: url(../img/headerLogo.png) no-repeat;
     background-size: cover;
@@ -56,27 +63,29 @@ body {
 }
 
 /* Menu */
-#header .menu {
+.wrapper  .menu {
+    width: 99%;
+    height: auto;
+    z-index: 5;
+    position: absolute;
+    display: none;
+}
+.wrapper .menu__nav {
     width: 160px;
     min-height: 165px;
     border-radius: 2%;
     background: rgba(243,243,243,0.9);
     padding: 5px;
+    margin: 5px auto 0 auto;
     box-sizing: border-box;
-    position: absolute;
-    top: 10px;
-    left: 22%;
-    right: 22%;
-    display: none;
-    z-index: 5;
 }
 
-#header .menu li {
+.wrapper .menu li {
     list-style: none;
     text-align: center;
 }
 
-#header .menu a {
+.wrapper .menu a {
     text-decoration: none;
     font-family: BaronNeue;
     font-size: 14px;
@@ -89,7 +98,7 @@ body {
     transition: color 0.5s ease;
 }
 
-#header .menu a:hover  {
+.wrapper .menu a:hover  {
     cursor: pointer;
     color: rgba(26,38,49,0.5);
     border-bottom: 2px solid rgba(26,38,49,0.5);
@@ -131,11 +140,13 @@ body {
     font-family: sans-serif;
     line-height: 1.5;
     color: #909090;
+    padding: 0 15px;
 }
 
 .AboutCenter__more {
     margin: 20px 0 0 0;
     font-family: BaronNeue;
+    padding: 0 15px;
 }
 
 #about .AboutCenter__more a {
@@ -205,25 +216,41 @@ body {
     border-bottom: 2px solid rgba(26,38,49,0.5);
 }
 
+#works .active {
+    font-weight: bold;
+    cursor: pointer;
+    color: rgba(26,38,49,0.5);
+    border-bottom: 2px solid rgba(26,38,49,0.5);
+}
+
 .WorksCenter__pictures {
     display: flex;
     justify-content: space-around;
     margin: 10px 0 0 0;
 }
 
+.gallery {
+    width: 90%;
+    height: auto;
+    /*border: 2px solid yellow;*/
+    margin: auto;
+    overflow: hidden;
+}
+
 .pictures__left,.pictures__right {
     width: 45%;
     margin: 5px;
+    /*border: 2px solid red;*/
 }
 
 .pictures__left img {
-    width: 90%;
-    margin: 5px;
+    width: 100%;
+    margin: 5px auto 5px auto;
 }
 
 .pictures__right img {
-    width: 90%;
-    margin: 5px;
+    width: 100%;
+    margin: 5px auto 5px auto;
 }
 
 
@@ -401,7 +428,7 @@ body {
 .telephone {
     width: 100%;
     height: auto;
-    padding: 50px 0 0 0;
+    padding: 50px 15px 0 15px;
     display: flex;
     flex-direction: column;
 }
@@ -571,6 +598,9 @@ body {
     color: #909090;
 }
 
+.none__768 {
+    display: none;
+}
 
 /* News */
 
@@ -601,8 +631,12 @@ body {
 .wrap__one {
     width: 100%;
     height: auto;
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
     padding: 0 0 10px 0;
+}
+
+.one__figOne {
+    padding: 0 15px;
 }
 
 .figOne__author {
@@ -667,8 +701,12 @@ body {
 .wrap__two {
     width: 100%;
     height: auto;
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
     padding: 0 0 10px 0;
+}
+
+.two__figTwo {
+    padding: 0 15px;
 }
 
 .figTwo__author {
@@ -687,8 +725,12 @@ body {
 .wrap__three {
     width: 100%;
     height: auto;
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
     padding: 0 0 10px 0;
+}
+
+.three__figThree {
+    padding: 0 15px;
 }
 
 .figThree__author {
@@ -832,13 +874,24 @@ body {
 }
 
 .contact__form {
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin: auto;
+}
+
+.form__pib {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__form label {
+    width: 48%;
+    box-sizing: border-box;
 }
 
 input[name="name"],
 input[name="sname"] {
-    width: 130px;
+    width: 100%;
     padding: 12px;
     font-family: BaronNeue;
     font-size: 14px;
@@ -914,7 +967,7 @@ input[type="button"]:hover {
     background: -ms-linear-gradient(left,#f3f3f3,white);
     background: -o-linear-gradient(left,#f3f3f3,white);
     background: linear-gradient(to right,#f3f3f3,white);
-    padding: 20px 0 40px 0;
+    padding: 20px 0 40px 15px;
     position: relative;
 }
 
@@ -943,7 +996,7 @@ input[type="button"]:hover {
     position: fixed;
     top: 92vh;
     right: 10px;
-    opacity: 0.4;
+    opacity: 0.9;
     -moz-transition: opacity 1s ease;
     -ms-transition: opacity 1s ease;
     -o-transition: opacity 1s ease;

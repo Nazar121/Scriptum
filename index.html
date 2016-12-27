@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="src/fa/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/fonts.css">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/321-480.css">
-    <link rel="stylesheet" href="src/css/481-768.css">
+    <link rel="stylesheet" href="src/css/320-479.css">
+    <link rel="stylesheet" href="src/css/480-767.css">
+    <link rel="stylesheet" href="src/css/768-991.css">
+    <link rel="stylesheet" href="src/css/992-1199.css">
+    <link rel="stylesheet" href="src/css/1200-1850.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
     
     <div class="wrapper">
-        
-        <header class="header" id="header">
-            <div class="header__logo"></div>
-            <nav class="menu">
+       <div class="menu">
+            <nav class="menu__nav">
                 <li><a href="#about" class="menu__item1">about scriptum</a></li>
                 <li><a href="#works" class="menu__item2">works</a></li>
                 <li><a href="#webDev" class="menu__item3">web development</a></li>
@@ -27,6 +28,9 @@
                 <li><a href="#slider" class="menu__item6">quotes</a></li>
                 <li><a href="#contact" class="menu__item7">contact us</a></li>
             </nav>
+        </div>
+        <header class="header" id="header">
+            <div class="header__logo"><a href="index.html"></a></div>          
             <div class="header__menu"></div>
         </header>
         
@@ -46,7 +50,7 @@
             <figure class="works__WorksCenter">
                 <h1 class="WorksCenter__title">works</h1>
                 <menu class="WorksCenter__menu">
-                    <li>all</li>
+                    <li class="active">all</li>
                     <li>design</li>
                     <li>web</li>
                     <li>brand</li>
@@ -54,16 +58,32 @@
                 </menu>
                 <div class="WorksCenter__pictures">
                     <div class="pictures__left">
-                        <img src="src/img/block1_img1.jpg" alt="block1_img1">
-                        <img src="src/img/block1_img6.jpg" alt="block1_img6">
-                        <img src="src/img/block1_img3.jpg" alt="block1_img3">
-                        <img src="src/img/block1_img7.jpg" alt="block1_img7">
+                        <div class="gallery"><img src="src/img/block1_img1.jpg" alt="block1_img1"></div>
+                        <div class="gallery"><img src="src/img/block1_img6.jpg" alt="block1_img6"></div>
+                        <div class="gallery"><img src="src/img/block1_img3.jpg" alt="block1_img3"></div>
+                        <div class="gallery"><img src="src/img/block1_img7.jpg" alt="block1_img7"></div>
                     </div>
                     <div class="pictures__right">
-                        <img src="src/img/block1_img5.jpg" alt="block1_img5">
-                        <img src="src/img/block1_img2.jpg" alt="block1_img2">
-                        <img src="src/img/block1_img4.jpg" alt="block1_img4">
-                        <img src="src/img/block1_img8.jpg" alt="block1_img8">
+                        <div class="gallery"><img src="src/img/block1_img5.jpg" alt="block1_img5"></div>
+                        <div class="gallery"><img src="src/img/block1_img2.jpg" alt="block1_img2"></div>
+                        <div class="gallery"><img src="src/img/block1_img4.jpg" alt="block1_img4"></div>
+                        <div class="gallery"><img src="src/img/block1_img8.jpg" alt="block1_img8"></div>
+                    </div>  
+                </div>
+                <div class="WorksCenter__pictures2">
+                    <div class="pictures__left2">
+                        <div class="gallery"><img src="src/img/block1_img1.jpg" alt="block1_img1"></div>
+                        <div class="gallery"><img src="src/img/block1_img2.jpg" alt="block1_img2"></div>
+                        <div class="gallery"><img src="src/img/block1_img3.jpg" alt="block1_img3"></div>
+                    </div>
+                    <div class="pictures__center2">
+                        <div class="gallery"><img src="src/img/block1_img4.jpg" alt="block1_img4"></div>
+                        <div class="gallery"><img src="src/img/block1_img5.jpg" alt="block1_img5"></div>
+                        <div class="gallery"><img src="src/img/block1_img6.jpg" alt="block1_img6"></div>
+                    </div>
+                    <div class="pictures__right2">
+                        <div class="gallery"><img src="src/img/block1_img7.jpg" alt="block1_img7"></div>
+                        <div class="gallery"><img src="src/img/block1_img8.jpg" alt="block1_img8"></div>
                     </div>  
                 </div>
             </figure>
@@ -154,7 +174,8 @@
                         <img src="src/img/telephone__Crafied.jpg" alt="telephone__Crafied">
                     </div>
                     <div class="bl3Bottom__right">
-                        <h2>crafied on coffeescript</h2>
+                        <h2 class="none__768">crafied on coffeescript</h2>
+                        <h2 class="block__768">crafied on cof...</h2>
                         <p>Sed a ipsum molestie, pellentesque felis at, vestibulum nunc. Aenean eu tristique elit. Vivamus ullamcorper id ante nec condimentum. In eleifend convallis ante in semper. Nam vitae com.</p>
                     </div>
                 </div>
@@ -284,8 +305,10 @@
         <article class="contact" id="contact">
             <h1 class="contact__title">contact us</h1>
             <form action="#" class="contact__form">
-                <label><input type="text" name="name" placeholder="*name" maxlength="16"></label>
-                <label><input type="text" name="sname" placeholder="*surname" maxlength="16"></label>
+                <div class="form__pib">
+                    <label><input type="text" name="name" placeholder="*name" maxlength="16"></label>
+                    <label><input type="text" name="sname" placeholder="*surname" maxlength="16"></label>
+                </div>
                 <p><input type="email" name="email" placeholder="*email"></p>
                 <p><textarea name="mesage" placeholder="masage"></textarea></p>
                 <p><input type="button" name="btn" value="send"></p>
@@ -301,7 +324,7 @@
             <p class="footer__copiright">Designed by Andrejs Hairulins - 2016 <span>&#169;</span></p>
             <div class="footer__up">
                 <a href="#header">
-                <img src="src/img/footer__up.png" alt="footer__up">
+                <img src="src/img/footer__up.png" alt="footer__up" title="To UP">
                 </a>
             </div>
         </article>

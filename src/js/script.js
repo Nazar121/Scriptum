@@ -5,7 +5,7 @@ $(document).ready(function() {
     var windowHeight = $(window).height();
     
     
-    // навігація по сайті
+    // Навігація по сайті
     function navigationScroll(element) {
         $(element).on('click', function(event) {
             event.preventDefault();
@@ -30,7 +30,7 @@ $(document).ready(function() {
     //  Випливаюче меню/навігація
     $(document).on('click',function(event){
         console.log(event.target.className); 
-        if (event.target.className == 'header__menu' || event.target.className == 'menu' || $("menu:has("+event.target.tagName+")").length ){
+        if (event.target.className == 'header__menu' || event.target.className == 'menu__nav' || $("menu:has("+event.target.tagName+")").length ){
             /*$('.menu').show(1000);*/
             $('.menu').fadeIn(1000);
         }
@@ -40,25 +40,53 @@ $(document).ready(function() {
     });
     
     
+    //-----------------------------------
+    
+//    $(document).ready(function($) {
+//        $('.navigation a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+//    });
+    
+    
+    
+    //-----------------------------------
+    
+    
+    //  Меню блока Work
+    $('.WorksCenter__menu li').on('click',function(){
+        var index = $(this).index();
+        for(var i=0; i < $('.WorksCenter__menu').children().length;i++){
+            if($('.WorksCenter__menu li')[i].className == 'active'){
+                $('.WorksCenter__menu li')[i].classList.remove("active");
+                $('.WorksCenter__menu li')[index].classList.add('active');
+            }
+        } 
+    });
+    
     //  Анімація картинок в блоці Work
-    $(".WorksCenter__pictures img").on("mouseover",function(){     
+    $(".gallery").on("mouseover",function(event){
+        var width = event.target.width;
+        var height = event.target.height;
+        /*console.log(width);     
+        console.log(height);*/     
         $(this).stop(true).queue('fx', function() {
             $(this).animate({
-                'box-sizing': 'border-box',
-                'width': '96%',
-                'height': 'auto'
-            })
+                'width': '99%',
+                'height': 'auto',
+                'margin': 'auto'
+            },1000)
                 .dequeue('fx');
-        })
+        });
     });
-    $(".WorksCenter__pictures img").on("mouseout",function(){
+
+    $(".gallery").on("mouseout",function(){
         $(this).stop(true).queue('fx', function() {
             $(this).animate({
                 'width': '90%',
-                'height': 'auto'
-            })
+                'height': 'auto',
+                'margin': 'auto'
+            },1000)
                 .dequeue('fx');
-        })
+        });
     })
     
     
