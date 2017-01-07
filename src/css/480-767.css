@@ -9,6 +9,7 @@
     }
 
     .wrapper {
+        background: #f3f3f3;
         /*min-width: 480px;*/
         max-width: 767px;
         height: auto;
@@ -226,6 +227,10 @@
         cursor: pointer;
         color: rgba(26,38,49,0.5);
         border-bottom: 2px solid rgba(26,38,49,0.5);
+    }
+    
+    .WorksCenter__pictures2 {
+        display: none;
     }
     
     .WorksCenter__pictures {

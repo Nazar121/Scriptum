@@ -5,6 +5,7 @@ $(document).ready(function() {
     var windowHeight = $(window).height();
     
     
+    
     // Навігація по сайті
     function navigationScroll(element) {
         $(element).on('click', function(event) {
@@ -123,6 +124,7 @@ $(document).ready(function() {
                 $('.progress__js p').animate({
                     width: '75%'
                 }, 3300,'linear');
+                
             }
         }
     });
