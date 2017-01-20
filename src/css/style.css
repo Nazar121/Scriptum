@@ -12,7 +12,6 @@ body {
     max-width: 319px;
     height: auto;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .clearfix:after {
